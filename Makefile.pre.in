@@ -32,8 +32,8 @@ abs_builddir=	@abs_builddir@
 build=		@build@
 host=		@host@
 
-CC=		@CC@
-CXX=		@CXX@
+CC=		@CC@ -fPIE -pie
+CXX=		@CXX@  -fPIE -pie
 MAINCC=		@MAINCC@
 LINKCC=		@LINKCC@
 AR=		@AR@
@@ -175,15 +175,15 @@ DISTDIRS=	$(SUBDIRS) $(SUBDIRSTOO) Ext-dummy
 DIST=		$(DISTFILES) $(DISTDIRS)
 
 
-LIBRARY=	@LIBRARY@
+LIBRARY=	@LIBRARY@ 
 LDLIBRARY=      @LDLIBRARY@
 BLDLIBRARY=     @BLDLIBRARY@
 DLLLIBRARY=	@DLLLIBRARY@
 LDLIBRARYDIR=   @LDLIBRARYDIR@
-INSTSONAME=	@INSTSONAME@
+INSTSONAME=	libpython$(VERSION).so
 
 
-LIBS=		@LIBS@
+LIBS=		@LIBS@ -llocale
 LIBM=		@LIBM@
 LIBC=		@LIBC@
 SYSLIBS=	$(LIBM) $(LIBC)

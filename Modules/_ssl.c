@@ -489,7 +489,7 @@ newPySSLSocket(PySSLContext *sslctx, PySocketSockObject *sock,
     Py_INCREF(sslctx);
 
     /* Make sure the SSL error state is initialized */
-    (void) ERR_get_state();
+    //(void) ERR_get_state();
     ERR_clear_error();
 
     PySSL_BEGIN_ALLOW_THREADS

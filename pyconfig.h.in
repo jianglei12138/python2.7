@@ -289,21 +289,6 @@
 /* Define to 1 if you have the `getgroups' function. */
 #undef HAVE_GETGROUPS
 
-/* Define to 1 if you have the `gethostbyname' function. */
-#undef HAVE_GETHOSTBYNAME
-
-/* Define this if you have some version of gethostbyname_r() */
-#undef HAVE_GETHOSTBYNAME_R
-
-/* Define this if you have the 3-arg version of gethostbyname_r(). */
-#undef HAVE_GETHOSTBYNAME_R_3_ARG
-
-/* Define this if you have the 5-arg version of gethostbyname_r(). */
-#undef HAVE_GETHOSTBYNAME_R_5_ARG
-
-/* Define this if you have the 6-arg version of gethostbyname_r(). */
-#undef HAVE_GETHOSTBYNAME_R_6_ARG
-
 /* Define to 1 if you have the `getitimer' function. */
 #undef HAVE_GETITIMER
 
@@ -902,12 +887,6 @@
 
 /* Define to 1 if you have the <utime.h> header file. */
 #undef HAVE_UTIME_H
-
-/* Define to 1 if you have the `wait3' function. */
-#undef HAVE_WAIT3
-
-/* Define to 1 if you have the `wait4' function. */
-#undef HAVE_WAIT4
 
 /* Define to 1 if you have the `waitpid' function. */
 #undef HAVE_WAITPID

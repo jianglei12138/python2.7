@@ -186,7 +186,7 @@ void dec_count(PyTypeObject *tp)
 
 #endif
 
-#ifdef Py_REF_DEBUG
+
 /* Log a fatal error; doesn't return. */
 void
 _Py_NegativeRefcount(const char *fname, int lineno, PyObject *op)
@@ -200,7 +200,6 @@ _Py_NegativeRefcount(const char *fname, int lineno, PyObject *op)
     Py_FatalError(buf);
 }
 
-#endif /* Py_REF_DEBUG */
 
 void
 Py_IncRef(PyObject *o)
